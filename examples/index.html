@@ -34,12 +34,8 @@
   </style>
   <script>
 
-    function flyingOpenMenu() {
-      document.getElementById('test-target').show({ animation: 'flying'});
-    }
-
-    function bouncingOpenMenu() {
-      document.getElementById('test-target').show({ animation: 'bouncing'});
+    function flyOpenMenu() {
+      document.getElementById('test-target').flyOpen();
     }
 
     function hideMenu() {
@@ -79,8 +75,7 @@
 </head>
 <body role="application">
   <button type="button" onclick="hideMenu();">Hide</button>
-  <button type="button" onclick="flyingOpenMenu();">Open with flying</button>
-  <button type="button" onclick="bouncingOpenMenu();">Open with bouncing</button>
+  <button type="button" onclick="flyOpenMenu();">Fly and Open</button>
   <button type="button" onclick="openMenu();">Open</button>
   <button type="button" onclick="closeMenu();">Close</button>
   <button type="button" onclick="focusMenu();">Focus</button>
